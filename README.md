@@ -5,4 +5,5 @@ This repository contains code to analyze topographical maps of landscape for hyd
 * [Scale model data](https://github.com/lapidesd/connectivity_topology/tree/main/scale_model_LEM), from [Li et al., 2020](https://www.sciencedirect.com/science/article/pii/S0167198719303435)
 
 Supporting code for this project can be found at:
-* [example](colabnotebook.com)
+* [Colab notebook applying persistence homology to synthetic examples](https://colab.research.google.com/drive/1MCGMS5ecnnBBprYOyYtvnYafL9CgMKIW?authuser=1#scrollTo=LO_RmXiVjEZF)
+* 
