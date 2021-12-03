@@ -6,6 +6,12 @@ This repository contains code to analyze topographical maps of landscape for hyd
     * Also contains wasserstein distance data for each timeseries from timeseries S1 (wass_data_LEM_dist_to_S1.csv).
     * raw_data includes raw LEM data (elevation) for images used in figures
 * Synthetics: csv files with elevation data for simple example landscapes
+    * example 1: flat slope
+    * example 2: slope with random noise
+    * example 3: slope with a straight channel
+    * example 4: slope with a branched channel
+    * example 5: square pit
+    * example 6: slope with contour berm
 
 
 Additional data related to this publication can be found at:
