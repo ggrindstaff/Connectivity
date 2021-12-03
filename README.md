@@ -1,7 +1,10 @@
 # Connectivity
 
 This repository contains code to analyze topographical maps of landscape for hydrological connectivity. 
-* LEM_info: contains csv files with persistence homology diagrams for each timestep of [LEM data](https://databank.illinois.edu/datasets/IDB-1558455). Columns are timestep T-10. Also contains wasserstein distance data for each timeseries from timeseries S1 (wass_data_LEM_dist_to_S1.csv).
+* LEM_info: 
+    * csv files with persistence homology diagrams for each timestep of [LEM data](https://databank.illinois.edu/datasets/IDB-1558455). Columns are timestep T-10. 
+    * Also contains wasserstein distance data for each timeseries from timeseries S1 (wass_data_LEM_dist_to_S1.csv).
+    * raw_data includes raw LEM data (elevation) for images used in figures
 
 
 Additional data related to this publication can be found at:
