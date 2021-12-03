@@ -6,4 +6,5 @@ This repository contains code to analyze topographical maps of landscape for hyd
 
 Supporting code for this project can be found at:
 * [Colab notebook applying persistence homology to synthetic examples](https://colab.research.google.com/drive/1MCGMS5ecnnBBprYOyYtvnYafL9CgMKIW?authuser=1#scrollTo=LO_RmXiVjEZF)
+* [Colab notebook applying persistence homology to rainfall simulator plot experiments](https://colab.research.google.com/drive/1KYyP1tGfe4L5_v9f1sxnFxeazSRqpia_?usp=sharing)
 * 
