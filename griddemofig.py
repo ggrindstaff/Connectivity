@@ -1,3 +1,8 @@
+#requires git, installs alternate ripser version from directory
+git clone https://github.com/ggrindstaff/ripser.py
+%cd ripser.py
+pip install -e .
+
 import numpy as np
 from numpy import genfromtxt
 
@@ -11,7 +16,6 @@ from matplotlib.colors import LinearSegmentedColormap, to_rgba
 import scipy
 from scipy import ndimage
 import random
-# import latex
 
 from ripser import ripser
 from scipy import stats
@@ -22,8 +26,6 @@ from skimage import measure
 
 plt.rcParams.update(plt.rcParamsDefault)
 
-#toy = genfromtxt("C:\\Users\grg02\Miniconda\envs\\topfig\\toy.csv",dtype=float,delimiter=',')
-#data = toy[:10,:10]
 data = np.array([[0.86177198, 0.86231934, 0.86242337, 0.860157, 0.86029416, 0.86158316,
   0.86128466, 0.86092225, 0.86092587, 0.86237965],
  [0.86295079, 0.86263436, 0.86081007, 0.86039829, 0.86089049, 0.86189078,
@@ -105,7 +107,6 @@ def cocycles_to_plot(cocycles,rotate=False):
       xi = ind%n
 #need index_t to coordinate map
     if rotate==True:
-#need index_t to coordinate map
       yi = m-int(ind/n)-1
       xi = ind%n  
     xloc.append(xi)
@@ -143,9 +144,6 @@ def to_nary(binary,color_data):
   bin = 1-binary
   blobs = measure.label(bin, background=0)
   ref = (bin)*(color_data)
-#  plt.imshow(ref,cmap=plotcmap,vmin=0,vmax=10)
-#  plt.colorbar()
-#  plt.show()
   m,n = bin.shape
   out = np.zeros((m,n))
   blobby = np.unique(blobs)
@@ -153,7 +151,6 @@ def to_nary(binary,color_data):
     if i!=0:
       x,y =  np.where(blobs==i)
       col = min(ref[x[j],y[j]] for j in range(len(x)))
- #     print([ref[x[j],y[j]] for j in range(len(x))])
       out[x,y] = col
   return out
 
@@ -164,7 +161,6 @@ dgm0 = rip["dgms"][0]
 dgm1 = rip["dgms"][1]
 cocycles = rip["cocycles"]
 xcycle,ycycle = cocycles_to_plot(cocycles[0],rotate=False)
-#xvals, yvals = cocycles_to_plot(cocycles[0],rotate=False)
 
 epsilon = .0001
 maxi = data.max()-epsilon
@@ -246,8 +242,6 @@ axim = fig.add_subplot(spec2[0:2, :4])
 axpd = fig.add_subplot(spec2[2:, :4]) 
 
 axim.imshow(data, cmap = 'gist_earth',interpolation='nearest')
-#axim.text(4,-1,"a) Data",fontsize="large")
-#axim.set_title("a) Data")
 axim.set_axis_off()
 axl.set_axis_off()
 
@@ -275,18 +269,10 @@ for ax in axc:
                          coordsA='axes fraction', coordsB="data", axesA=ax, axesB=axbar,linestyle=":")
   fig.add_artist(conl)
   fig.add_artist(conr)
-#  ax.set_axis_off()
-#  ax.text(0,10.5,textlabel[i],fontsize=12,c='black')
   i = i+1
-#  con.set_color([0, 0, 0])
-#  con.set_linewidth(4)
-
 
 fig.text(0.313,0.62,"Adjacency \n   graph",Rotation=90)
 fig.text(0.313,0.82,"Thresholded \n    image",Rotation=90)
-
-#axc[0].text(-2.5,1,"Adjacency \n graph",Rotation=90)
-#axb[0].text(-1.8,9,"Thresholded \n image",Rotation=90)
 
 colorkeys = plt.rcParams['axes.prop_cycle'].by_key()['color']
 color_data_keys = [colorkeys[9]]+colorkeys[:9]
@@ -310,7 +296,6 @@ for i in range(len(dgm0)-1):
   blobs = measure.label(im)
   labeli = blobs[ycycle[i],xcycle[i]]
   maski = np.where(blobs==labeli,i+1,0)
-#  print(maski)
   color_data = color_data + maski
 color_data = color_data+1
 
@@ -319,15 +304,8 @@ i=0
 for ax in axb:
     dat = tobinary(data,ts[i],super)
     col_dat = to_nary(dat,color_data)
-#    label = 'Threshold: {0}'.format(int(i*100))+"%"
     label = textlabel[i]+' t = {0}'.format(ts[i])
-#    ax.set_title(label)
-    #ax.set_xlim(0, xlim)  
-    #ax.set_ylim(0,ylim)
-    #ax.imshow(dat, cmap = 'gist_earth',interpolation='nearest')
     ax.imshow(col_dat,cmap=plotcmap,vmin=vmin,vmax=vmax)
-#    ax.text(0,-1.5,textlabel[i],fontsize=12,c='black')
-#    ax.set_axis_off()
     ax.set_xticks([])
     ax.set_yticks([])
     i = i+1
@@ -349,11 +327,9 @@ axbar.set_ylim(0,y+0.5)
 for i in range(len(axb)):
   axbar.axvline(ts[i],linestyle=":",color='k')
 axbar.text(maxi+0.0003,-0.6, '$\cdots  \infty$',fontsize='x-large')
-#axbar.spines['right'].set_visible(False)
 axbar.spines['left'].set_visible(False)
 axbar.spines['top'].set_visible(False)
-#axbar.set_title("d) Persistence Barcode")
-#fig.suptitle("b) Persistence Barcode")
+
 
 line = plt.Line2D((.5,.5),(.1,.9), color="k", linewidth=1)
 #fig.add_artist(line)
@@ -373,14 +349,12 @@ axpd.text(xmin-0.0005,b_inf-0.00003, '$\infty$',fontsize='x-large')
 axpd.set_xlabel("Birth threshold")
 axpd.set_ylabel("Persistence")
 axpd.set_title("c) Persistence Diagram")
-#axpd.set_xlim(mini,maxi)
-#axpd.set_ylim(mini,maxi)
+
 
 fig.text(0.55,1.01,"b) Persistence Barcode",fontsize='large')
 fig.text(0.13,1.01,"a) Data",fontsize='large')
 #fig.text(0.075,0.54,"c) Persistence Diagram", fontsize='large')
 
-plt.savefig("C:\\Users\grg02\Miniconda\envs\\topfig\\TDAFig.png", bbox_inches='tight')
 plt.show()
 
 
