@@ -1,7 +1,7 @@
 # Connectivity
 
-This repository contains code for automatic detection of berms and stockponds, and figures accompanying the paper {\em Automated earthwork detection using topological
-persistence}, by Dana A Lapides, Gillian Grindstaff, and Mary H Nichols. 
+This repository contains code for automatic detection of berms and stockponds, and figures accompanying the paper *Automated earthwork detection using topological
+persistence*, by Dana A Lapides, Gillian Grindstaff, and Mary H Nichols. 
 * Berms
 * Synthetics: csv files with elevation data for simple example landscapes
     * example 1: flat slope
