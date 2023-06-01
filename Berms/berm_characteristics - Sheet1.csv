@@ -1,0 +1,104 @@
+Figure subplot ,approximate location in scene,height_diffs_m,length_m,width,note,state of repair,max_berm_pixel_value,max_adjacent_pixel_value,detected
+AOI2,bottom left at end of train of berms,0.35,98,7,line,good,1029.9,1029.55,N
+AOI2,bottom left stock pond,0.86,143,10,line,good,1041.36,1040.5,Y
+AOI2,bottom right stock pond,0.9,82,7,line,good,1000.4,999.5,Y
+AOI2,middle right stock pond,2,142,16,pond,good,1005.2,1003.2,N
+AOI2,upper right stock pond,0.8,161,15,line,good,1007,1006.2,Y
+AOI2,bottom center at beginning of train of berms,0.5,58,7,line,good,1018.5,1018,Y
+AOI2,bottom left of stock pond,1.1,107,11,line,good,1007.1,1006,Y
+AOI2,chevron berm center bottom,0.7,115,8,chevron,flank,1023.2,1022.5,Y
+AOI2,berm to right of chevron,1.6,82,11,line,flank,1020.1,1018.5,Y
+AOI2,berm in center of clip,0.4,92,7,line,good,1022.3,1021.9,Y
+AOI2,berm right and down of center,0.2,72,5,line,flank,1015.1,1014.9,N
+AOI2,berm to right of upper stock pond,0.3,133,5,line,good,1003.2,1002.9,Y
+AOI2,berm up and right of upper stock pond,1,97,11,line,flank,1005.9,1004.9,Y
+AOI2,upper left stock pond,1.5,165,11,pond,breach,1038.7,1037.2,Y
+AOI2,berm left of upper left stock pond,0.6,203,7,line,good,1042.2,1041.6,N
+AOI2,top berm,0.2,142,5,line,flank,1040.8,1040.6,N
+AOI2,second to top berm left,1,123,6,line,good,1036.9,1035.9,Y
+AOI2,second to top berm right,0.2,58,10,line,flank,1031.3,1031.1,N
+AOI3,left stock pond,0.3,40,7,line,good,1079.2,1078.9,Y
+AOI3,long second from left,-0.3,159,6,line,good,1061.5,1061.8,N
+AOI3,short to right of long on far left,0.7,37,8,hooked,good,1059.4,1058.7,N
+AOI3,curved one third from left in left group,1,77,7,curved,good,1057.7,1056.7,Y
+AOI3,long one in upper left group,0.5,151,5,line,good,1047.2,1046.7,Y
+AOI3,leftmost short one in upper left group,0.5,47,9,line,good,1043.6,1043.1,Y
+AOI3,rightmost short one in upper left group,0.4,40,7,line,good,1039,1038.6,Y
+AOI3,berm left of upper stock pond,1,116,25,curved,flank,1039,1038,Y
+AOI3,upper left stock pond,1.3,124,16,curved,flank,1037.8,1036.5,Y
+AOI3,middle stock pond,1.2,190,13,breach,good,1031.5,1030.3,Y
+AOI3,berm left of middle stock pond,0.3,64,6,t-shape,good,1032.2,1031.9,N
+AOI3,berm above middle stock pond,0.4,108,5,line,flank,1032.6,1032.2,Y
+AOI3,berm two above middle stock pond,0.1,40,4,line,flank,1029.4,1029.3,N
+AOI3,bottom of group right of center tock pond,0.4,185,8,hooked,good,1028.3,1027.9,N
+AOI3,second from bottom (left) of group right of center stock pond,0.7,112,7,line,good,1022.5,1021.8,Y
+AOI3,lower of two directly right of center stock pond,0.3,53,3,line,flank,1021.6,1021.3,N
+AOI3,upper of two directly right of center stock pond,0.1,68,3,line,flank,1019.7,1019.6,N
+AOI3,further right of two to right of center stock pond,0.4,93,7,line,flank,1017.5,1017.1,Y
+AOI3,up and right of previous,0.2,128,5,line,flank,1014.5,1014.3,N
+AOI3,upper left of group right of center stock pond,0.1,42,4,line,flank,1020.4,1020.3,N
+AOI3,upper center of group right of center stock pond,0.5,81,6,line,flank,1014.5,1014,Y
+AOI3,upper right of group right of center stock pond,0.1,56,3,line,flank,1010.5,1010.4,N
+AOI3,"group right of center stock pond, upper left area, second from top",0.1,61,4,line,good,1019.7,1019.6,N
+AOI3,"group right of center stock pond, upper left area, third from top",0.1,73,5,line,good,1020.6,1020.5,N
+AOI3,short one in upper right pair,0.2,52,7,curved,breach,1004.8,1004.6,N
+AOI3,"longer, lower one in upper right pair",0.4,84,7,line,flank,1005.4,1005,Y
+AOI3,above right stock pond,0.4,77,4,line,good,1006.5,1006.1,Y
+AOI3,right of berm above right stock pond,0.6,93,7,hooked,flank,1001.2,1000.6,Y
+AOI3,right stock pond,0.2,535,12,pond,flank,1009.4,1009.2,N
+AOI3,left of pair right of right stock pond,0.4,63,5,line,flank,999.4,999,Y
+AOI3,right of pair right of right stock pond,0.5,102,6,line,breach,994.5,994,Y
+AOI3,upper of pair right and down from right stock pond,0.1,62,5,line,flank,999.1,999,N
+AOI3,lower of pair right and down from right stock pond,0.3,50,5,line,flank,1001.4,1001.1,N
+AOI3,berm below previous,0.9,69,11,line,good,1003.1,1002.2,Y
+AOI3,upper of group of three in bottom right,0.6,63,7,line,good,1017.7,1017.1,Y
+AOI3,lower left of group of three in bottom right,0.5,87,9,line,good,1021.5,1021,Y
+AOI3,lower right of group of three in bottom right,0.5,63,6,line,good,1016.5,1016,Y
+AOI3,bottom right corner berm,0.8,126,7,line,breach,995,994.2,Y
+AOI5,left stock pond,0.4,210,10,pond,flank,1175.9,1175.5,Y
+AOI5,berm above left stock pond (left),-3.3,235,8,curved,fralnk,1180,1183.3,Y
+AOI5,berm above left stock pond (right),0.8,188,8,chevron,flank,1178.3,1177.5,Y
+AOI5,berm right of berms above left stock pond,0.9,80,10,curved,good,1173.6,1172.7,Y
+AOI5,berm right of left stock pond,0.7,72,5,line,good,1170.6,1169.9,Y
+AOI5,berm down and right of left stock pond,0.1,88,8,line,flank,1165.8,1165.7,N
+AOI5,berm further down and right from left stock pond,0.1,66,8,line,flank,1163.8,1163.7,N
+AOI5,lower left berm,1,118,9,line,breach,1147.9,1146.9,N
+AOI5,fourth berm right of berms above left stock pond,0.4,94,9,line,good,1167.9,1167.5,Y
+AOI5,5th berm right of berms above left stock pond,0.4,185,7,curved,flank,1163,1162.6,Y
+AOI5,sixth berm right of berms above left stock pond,0.4,91,6,line,good,1159.8,1159.4,Y
+AOI5,above line of berms coming from above left stock pond,0.1,177,7,line,good,1162.9,1162.8,N
+AOI5,up and left from previous,0,61,5,line,flank,1170.6,1170.6,N
+AOI5,upper stock pond,1.4,424,12,pond,flank,1164.7,1163.3,Y
+AOI5,long vertical berm,0.7,543,11,curved,good,1147,1146.3,Y
+AOI5,group of three horizontal above long vertical (center),0.4,122,6,line,good,1148.9,1148.5,Y
+AOI5,group of three horizontal above long vertical (right),0.3,135,6,line,good,1147,1146.7,Y
+AOI5,left of pair bottom center,0.2,130,7,line,flank,1117,1116.8,N
+AOI5,right of pair bottom center,0.7,124,5,line,flank,1112.6,1111.9,Y
+AOI5,leftmost (1) of group of sixe in center,0.5,67,7,line,breach,1125.2,1124.7,Y
+AOI5,2 of 6 in center,0.5,74,7,line,flank,1122.7,1122.2,N
+AOI5,3 of 6 in center,0.4,64,7,line,breach,1120.2,1119.8,Y
+AOI5,4 of 6 in center,1.1,80,7,line,flank,1117.9,1116.8,N
+AOI5,5 of 6 in center,0.3,98,6,line,breach,1112.8,1112.5,N
+AOI5,6 of 6 in center,0.6,140,8,line,breach,1109.7,1109.1,Y
+AOI5,lower right stock pond left berm,0.4,222,5,line,good,1097.2,1096.8,Y
+AOI5,lower right stock pond upper entry berm,0.9,83,9,line,good,1096.3,1095.4,Y
+AOI5,lower right stock pond lower entry berm,1.5,108,12,line,breach,1097,1095.5,Y
+AOI5,berm right of lower stock pond,0.7,77,9,line,good,1093.3,1092.6,Y
+AOI5,berm up and left of lower right stock pond,0.3,88,5,line,breach,1100,1099.7,Y
+AOI5,berm directly up from stock pond (lanting up and right orientation),0.1,40,5,line,good,1096.8,1096.7,N
+AOI5,second from right of group directly above right stock pond,0.4,41,7,line,good,1092.5,1092.1,Y
+AOI5,bottom right chevron berm,0.9,187,10,chevron,breach,1087.1,1086.2,Y
+AOI5,bottom right pair (upper),0.7,41,7,line,good,1083.6,1082.9,N
+AOI5,bottom right pair(lower),0.6,52,8,line,good,1083.4,1082.8,Y
+ALTAR,channelside berm upper left,0.6,360,7,curved,breach,1234.9,1234.3,Y
+ALTAR,left valley berm (1),1,100,14,line,good,1237.7,1236.7,Y
+ALTAR,left valley berm (2),1.2,107,10,line,good,1241.7,1240.5,Y
+ALTAR,center valley berm (3),0,142,10,line,good,1249.3,1249.3,N
+ALTAR,upper of group of three center valley berms,1.3,115,12,line,good,1255.9,1254.6,Y
+ALTAR,lower of group of three center valley berms,1.7,166,11,curved,good,1255.9,1254.2,Y
+ALTAR,right of group of three cetner valley berms,1.4,109,11,line,good,1258.2,1256.8,Y
+ALTAR,second from right valley berm (7),1.4,160,10,hooked,good,1263.1,1261.7,Y
+ALTAR,right valley berm (8),0.8,85,9,line,good,1265.2,1264.4,Y
+ALTAR,leftmost berm attached to bulge,-0.9,53,12,line,good,1266,1266.9,N
+ALTAR,center berm attached to bulge,-0.8,73,11,line,good,1272,1272.8,N
+ALTAR,right berm attached to bulge,-2,104,11,chevron,good,1276,1278,N
