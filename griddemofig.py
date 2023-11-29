@@ -214,32 +214,32 @@ if do1 == True:
       persistence1.append(feat[1]-feat[0])
     y = y+1
 
-plt.rc('font', size=12) 
-fig = plt.figure(constrained_layout=True, figsize = (15,7))
-spec2 = gridspec.GridSpec(ncols=17, nrows=4, figure=fig)
+plt.rc('font', size=14) 
+fig = plt.figure(constrained_layout=True, figsize = (14,7))
+spec2 = gridspec.GridSpec(ncols=12, nrows=8, figure=fig)
 spec2.update(top=2)
 
-axb0 = fig.add_subplot(spec2[0, 5:7])
-axb1 = fig.add_subplot(spec2[0, 7:9]) 
-axb2 = fig.add_subplot(spec2[0, 9:11]) 
-axb3 = fig.add_subplot(spec2[0, 11:13]) 
-axb4 = fig.add_subplot(spec2[0, 13:15]) 
-axb5 = fig.add_subplot(spec2[0, 15:]) 
+axb0 = fig.add_subplot(spec2[4, 0:2])
+axb1 = fig.add_subplot(spec2[4, 2:4]) 
+axb2 = fig.add_subplot(spec2[4, 4:6]) 
+axb3 = fig.add_subplot(spec2[4, 6:8]) 
+axb4 = fig.add_subplot(spec2[4, 8:10]) 
+axb5 = fig.add_subplot(spec2[4, 10:]) 
 axb = [axb0,axb1,axb2,axb3,axb4,axb5]
 
-axc0 = fig.add_subplot(spec2[1, 5:7])
-axc1 = fig.add_subplot(spec2[1, 7:9]) 
-axc2 = fig.add_subplot(spec2[1, 9:11]) 
-axc3 = fig.add_subplot(spec2[1, 11:13]) 
-axc4 = fig.add_subplot(spec2[1, 13:15]) 
-axc5 = fig.add_subplot(spec2[1, 15:]) 
+axc0 = fig.add_subplot(spec2[5, 0:2])
+axc1 = fig.add_subplot(spec2[5, 2:4]) 
+axc2 = fig.add_subplot(spec2[5, 4:6]) 
+axc3 = fig.add_subplot(spec2[5, 6:8]) 
+axc4 = fig.add_subplot(spec2[5, 8:10]) 
+axc5 = fig.add_subplot(spec2[5, 10:]) 
 axc = [axc0,axc1,axc2,axc3,axc4,axc5]
 
 axl = fig.add_subplot(spec2[0:1,4:5])
 
-axbar = fig.add_subplot(spec2[2:, 4:]) 
-axim = fig.add_subplot(spec2[0:2, :4])
-axpd = fig.add_subplot(spec2[2:, :4]) 
+axbar = fig.add_subplot(spec2[6:, :]) 
+axim = fig.add_subplot(spec2[0:3, :5])
+axpd = fig.add_subplot(spec2[0:3, 7:]) 
 
 axim.imshow(data, cmap = 'gist_earth',interpolation='nearest')
 axim.set_axis_off()
@@ -271,8 +271,8 @@ for ax in axc:
   fig.add_artist(conr)
   i = i+1
 
-fig.text(0.313,0.62,"Adjacency \n   graph",Rotation=90)
-fig.text(0.313,0.82,"Thresholded \n    image",Rotation=90)
+fig.text(0.085,0.65,"Adjacency \n   graph",rotation=90)
+fig.text(0.085,0.85,"Thresholded \n    image",rotation=90)
 
 colorkeys = plt.rcParams['axes.prop_cycle'].by_key()['color']
 color_data_keys = [colorkeys[9]]+colorkeys[:9]
@@ -348,14 +348,12 @@ axpd.text(xmin-0.0005,b_inf-0.00003, '$\infty$',fontsize='x-large')
 #axpd.axline(xy1=(mini,mini),slope=1)
 axpd.set_xlabel("Birth threshold")
 axpd.set_ylabel("Persistence")
-axpd.set_title("c) Persistence Diagram")
+axpd.set_title("b) Persistence Diagram")
 
 
-fig.text(0.55,1.01,"b) Persistence Barcode",fontsize='large')
-fig.text(0.13,1.01,"a) Data",fontsize='large')
-#fig.text(0.075,0.54,"c) Persistence Diagram", fontsize='large')
+fig.text(0.5,1.1,"c) Persistence Barcode",fontsize='large',ha='center')
+axim.set_title("a) Data",fontsize='large')
+# #fig.text(0.075,0.54,"c) Persistence Diagram", fontsize='large')
 
-plt.show()
-
-
-
+# plt.show()
+plt.savefig('TDAFig3.pdf',format='pdf',dpi=300,bbox_inches='tight')
